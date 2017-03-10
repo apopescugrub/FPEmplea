@@ -1,0 +1,7 @@
+.nav-pills .active a {
+  background: #E45614 !important;
+}
+
+.nav-pills .active a:focus, .nav-pills .active a:hover {
+  background: #E45614 !important;
+}

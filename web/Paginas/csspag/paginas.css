@@ -1,0 +1,39 @@
+h1{text-align: center;
+padding: 1em;
+margin-top: 0px;}
+
+h2 {padding-bottom: 1em;
+text-decoration: underline;}
+
+.pageshead {
+    
+        background-color: #00A2FE;
+    color: white;
+}
+
+.dot-border {border: 1px dashed #00A2FE ;
+    background: rgba(0, 0, 0, 0.1);
+    text-align: center;
+    
+}
+
+.fontlist {margin: 2em;}
+
+.fontlist>p {margin:1em;}
+
+.code {background-color: #00A2FE;
+
+font-family: none !important;}
+
+.notes {font-size: 25px;
+font-family: fantasy;}
+
+.box {border: 1px red dashed;}
+
+.mar50px{margin-bottom: 50px;
+margin-top: 50px;
+margin-left: 50px;
+margin-right: 50px;}
+
+
+#relleno {height: 1000px;}

@@ -1,0 +1,113 @@
+#imagenes {
+  padding-right: 20%;
+  padding-left: 20%;
+}
+
+.img-thumbnail {
+  border: 1px solid #E45614;
+}
+
+.responsive {
+  width: 100%;
+}
+
+.img-warp {
+  position: relative;
+}
+
+.gradiente {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(38, 50, 56, 0.2);
+  background-blend-mode: multiply;
+  z-index: 0;
+  top: 0px;
+}
+
+.gradiente2 {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(233, 108, 41, 0.2);
+  background-blend-mode: multiply;
+  z-index: 0;
+  top: 0px;
+}
+
+.gradiente-round {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(38, 50, 56, 0.2);
+  background-blend-mode: multiply;
+  z-index: 0;
+  top: 0px;
+  border-radius: 6px;
+}
+
+.gradiente2-round {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(233, 108, 41, 0.2);
+  background-blend-mode: multiply;
+  z-index: 0;
+  top: 0px;
+  border-radius: 6px;
+}
+
+.gradiente-circle {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(38, 50, 56, 0.2);
+  background-blend-mode: multiply;
+  z-index: 0;
+  top: 0px;
+  border-radius: 50%;
+}
+
+.gradiente2-circle {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(233, 108, 41, 0.2);
+  background-blend-mode: multiply;
+  z-index: 0;
+  top: 0px;
+  border-radius: 50%;
+}
+
+.image-container {
+  position: relative;
+  width: 200px;
+  height: 300px;
+}
+
+.image-container .after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  color: #FFF;
+}
+
+.image-container:hover .after {
+  display: block;
+  background: rgba(0, 0, 0, 0.6);
+}

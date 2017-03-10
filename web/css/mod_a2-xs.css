@@ -1,0 +1,29 @@
+#responsive-zig ul {
+  list-style: none;
+  text-align: center;
+  padding: 0px;
+}
+
+#responsive-zig ul .pabo2em {
+  padding-bottom: 4em;
+}
+
+#responsive-zig ul li {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+#responsive-zig ul li h4 {
+  color: #b3b3b3;
+}
+
+#responsive-zig ul li .subzig {
+  text-transform: none;
+  font-size: 18px;
+  color: #333333;
+}
+
+#responsive-zig ul li .img-responsive {
+  margin: 0 auto;
+  border: 5px solid #E45614;
+}

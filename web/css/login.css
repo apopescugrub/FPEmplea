@@ -1,0 +1,12 @@
+#login {
+  padding: 4em;
+  background: #E45614;
+  width: 80%;
+  margin: auto;
+  margin-top: 150px;
+}
+
+#login .form-group {
+  margin-right: 0px;
+  margin-left: 0px;
+}

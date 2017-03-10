@@ -1,0 +1,79 @@
+.btn-primary {
+  margin-top: 1em;
+  color: #fff;
+  background: #E45614;
+  border-color: #E45614;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background: #F17A44;
+  border-color: #F17A44;
+}
+
+.btn-primary:focus, .btn-primary:focus:active, .btn-primary:active:hover {
+  background: #E45614;
+  border-color: #E45614;
+}
+
+.btn-primary:focus {
+  outline: none !important;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+.switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: transparent;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.switch .slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  background-color: #fff;
+  border: 2px solid #90a4ae;
+  -webkit-transition: .3s;
+  transition: .3s;
+  z-index: 2;
+}
+
+.switch .slider:after {
+  height: 2px;
+  width: 100%;
+  z-index: 1;
+  background-color: #cfd8dc;
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 2px;
+  -webkit-transition: background-color .3s ease-in;
+  transition: background-color .3s ease-in;
+}
+
+.switch input {
+  display: none;
+}
+
+.switch input:checked + .slider:before {
+  -webkit-transform: translateX(22px);
+  transform: translateX(22px);
+}
+
+.switch .center {
+  text-align: center !important;
+}

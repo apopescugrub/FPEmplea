@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/formularios.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700|Lato:400i|Open+Sans" rel="stylesheet">
+    
+    <link rel="stylesheet" href="csspag/paginas.css" type="text/css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+</head>
+<body>
+    <div class="pageshead">
+   <a href="../frame.html">Volver</a><h1>Elementos de formulario</h1>
+   </div>
+   <div class="container">
+    
+    
+    
+    
+    <div id="login">
+    
+     <h2>Formulario Login</h2>
+     <p>El formulario de login, basado en Bootstrap. Para usarlo hay que copiar el siguiente codigo. </p>
+     
+     
+     <form class="form-horizontal">
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="email">Email:</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control"  id="email" placeholder="Enter email" required>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="pwd" required>Password:</label>
+    <div class="col-sm-10"> 
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+    </div>
+  </div>
+  <div class="form-group"> 
+    <div class="col-sm-offset-2 col-sm-10">
+      <div class="checkbox">
+        <label><input type="checkbox"> Remember me</label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group"> 
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-default">Submit</button>
+    </div>
+  </div>
+</form>
+    
+    <code>
+         &lt;form class="form-horizontal"><br>
+  &lt;div class="form-group"><br>
+    &lt;label class="control-label col-sm-2" for="email">Email:&lt;/label><br>
+    &lt;div class="col-sm-10"><br>
+      &lt;input type="email" class="form-control"  id="email" placeholder="Enter email" required><br>
+    &lt;/div>
+  &lt;/div><br>
+  &lt;div class="form-group"><br>
+    &lt;label class="control-label col-sm-2" for="pwd" required>Password:&lt;/label><br>
+    &lt;div class="col-sm-10"> <br>
+      &lt;input type="password" class="form-control" id="pwd" placeholder="Enter password"><br>
+    &lt;/div><br>
+  &lt;/div><br>
+  &lt;div class="form-group"> <br>
+    &lt;div class="col-sm-offset-2 col-sm-10"><br>
+      &lt;div class="checkbox"><br>
+        &lt;label>&lt;input type="checkbox"> Remember me&lt;/label><br>
+      &lt;/div>
+    &lt;/div>
+  &lt;/div><br>
+  &lt;div class="form-group"> <br>
+    &lt;div class="col-sm-offset-2 col-sm-10"><br>
+      &lt;button type="submit" class="btn btn-default">Submit&lt;/button><br>
+    &lt;/div>
+  &lt;/div><br>
+&lt;/form>
+         
+     </code>
+     
+      </div>
+    
+    <div id="inscripcion">
+    <h2>Formularios inscripcion</h2>
+    <p> Para los formularios de inscripcion con pestañas. </p>
+    <ul class="nav nav-tabs center">
+<li class="active col-md-6"><a data-toggle="tab" href="#alumnos">Registrar alumnos</a></li>
+<li class="col-md-6"><a data-toggle="tab" href="#empresas">Registrar empresas</a></li>
+
+</ul>
+<div class="tab-content ">
+<div id="alumnos" class="tab-pane fade in active">
+<h3>Acceso Alumnos</h3>
+<form>
+  <div class="form-group">
+   
+   <label  for="nombre" >Nombre* </label>
+   <input id="nombre" class="form-control" type="text" required>
+   
+   <label  for="apellido" >Apellido* </label>
+   <input id="apellido" class="form-control" type="text" required>
+   
+    <label for="dni" >DNI/NIE* </label>
+    <input class="form-control" type="text" id="dni" required>
+     
+    <label for="emailalumn">Email de contacto*</label>
+    <input type="email" class="form-control" id="emailalumn" >
+    
+    <label for="telm">Teléfono móvil*</label>
+    <input class="form-control" type="tel"  id="telm" required>
+    
+    <label  for="user" >Nombre de Usuario*</label>
+   <input id="user" class="form-control" type="text" required>
+ 
+    
+    
+    <button type="submit" class="btn btn-primary">Submit</button>
+    
+    </div>
+    </form>
+    </div>
+      
+       
+    
+<div id="empresas" class="tab-pane fade">
+<h3>Acceso Empresas</h3>
+
+
+<form>
+  <div class="form-group">
+   
+   <label  for="nombreemp" >Nombre empresa * </label>
+   <input id="nombreemp" class="form-control" type="text" required>
+   
+    <label for="cif" >CIF* </label>
+    <input class="form-control" type="text" id="cif" required>
+     
+    <label for="emailemp">Email de contacto*</label>
+    <input type="email" class="form-control" id="emailemp">
+    
+    <label for="telemp">Teléfono de contacto*</label>
+    <input class="form-control" type="tel"  id="telemp" required>
+    
+    <label  for="useremp" >Nombre de Usuario*</label>
+   <input id="useremp" class="form-control" type="text" required>
+ 
+    
+    
+    <button type="submit" class="btn btn-primary">Submit</button>
+    
+    </div>
+    </form>
+
+
+</div>
+
+</div>
+     
+     
+     <code>
+             &lt;ul class="nav nav-tabs center"><br>
+&lt;li class="active col-md-6">&lt;a data-toggle="tab" href="#alumnos">Registrar alumnos&lt;/a>&lt;/li><br>
+&lt;li class="col-md-6">&lt;a data-toggle="tab" href="#empresas">Registrar empresas&lt;/a>&lt;/li><br>
+
+&lt;/ul><br>
+&lt;div class="tab-content "><br>
+&lt;div id="alumnos" class="tab-pane fade in active"><br>
+&lt;h3>Acceso Alumnos&lt;/h3><br>
+&lt;form><br>
+  &lt;div class="form-group"><br>
+   
+   &lt;label  for="nombre" >Nombre* &lt;/label><br>
+   &lt;input id="nombre" class="form-control" type="text" required><br>
+   
+   &lt;label  for="apellido" >Apellido* &lt;/label><br>
+   &lt;input id="apellido" class="form-control" type="text" required><br>
+   
+    &lt;label for="dni" >DNI/NIE* &lt;/label><br>
+    &lt;input class="form-control" type="text" id="dni" required><br>
+     
+    &lt;label for="emailalumn">Email de contacto*&lt;/label><br>
+    &lt;input type="email" class="form-control" id="emailalumn" ><br>
+    
+    &lt;label for="telm">Teléfono móvil*&lt;/label><br>
+    &lt;input class="form-control" type="tel"  id="telm" required><br>
+    
+    &lt;label  for="user" >Nombre de Usuario*&lt;/label><br>
+   &lt;input id="user" class="form-control" type="text" required><br>
+ 
+    
+    
+    &lt;button type="submit" class="btn btn-primary">Submit&lt;/button><br>
+    
+    &lt;/div>
+    &lt;/form>
+    &lt;/div><br>
+      
+       
+    
+&lt;div id="empresas" class="tab-pane fade"><br>
+&lt;h3>Acceso Empresas&lt;/h3><br>
+
+
+&lt;form><br>
+  &lt;div class="form-group"><br>
+   
+   &lt;label  for="nombreemp" >Nombre empresa * &lt;/label><br>
+   &lt;input id="nombreemp" class="form-control" type="text" required><br>
+   
+    &lt;label for="cif" >CIF* &lt;/label><br>
+    &lt;input class="form-control" type="text" id="cif" required><br>
+     
+    &lt;label for="emailemp">Email de contacto*&lt;/label><br>
+    &lt;input type="email" class="form-control" id="emailemp"><br>
+    
+    &lt;label for="telemp">Teléfono de contacto*&lt;/label><br>
+    &lt;input class="form-control" type="tel"  id="telemp" required><br>
+    
+    &lt;label  for="useremp" >Nombre de Usuario*&lt;/label><br>
+   &lt;input id="useremp" class="form-control" type="text" required><br>
+ 
+    
+    
+    &lt;button type="submit" class="btn btn-primary">Submit&lt;/button><br>
+    
+    &lt;/div>
+    &lt;/form>
+
+
+&lt;/div>
+
+&lt;/div><br>
+     </code>
+
+     
+     
+      
+      
+      </div>
+      
+      
+      
+      <div id="inscripcioncentros">
+         <h2>Inscripcion Centros</h2>
+         
+          <form>
+  <div class="form-group">
+   
+   <label  for="nombrecen" >Nombre centro * </label>
+   <input id="nombrecen" class="form-control" type="text" required>
+   
+    <label for="cifcen" >CIF* </label>
+    <input class="form-control" type="text" id="cif" required>
+     
+    <label for="emailcen">Email de contacto*</label>
+    <input type="email" class="form-control" id="emailcen" >
+    
+    <label for="telcen">Teléfono de contacto*</label>
+    <input class="form-control" type="tel"  id="telcen" required>
+    
+    <label  for="usercen" >Nombre de Usuario*</label>
+   <input id="usercen" class="form-control" type="text" required>
+ 
+    
+    
+    <button type="submit" class="btn btn-primary">Submit</button>
+    
+    </div>
+    </form>
+         
+       <code>
+           &lt;form><br>
+  &lt;div class="form-group"><br>
+   
+   &lt;label  for="nombrecen" >Nombre centro * &lt;/label><br>
+   &lt;input id="nombrecen" class="form-control" type="text" required><br>
+   
+    &lt;label for="cifcen" >CIF* &lt;/label><br>
+    &lt;input class="form-control" type="text" id="cif" required><br>
+     
+    &lt;label for="emailcen">Email de contacto*&lt;/label><br>
+    &lt;input type="email" class="form-control" id="emailcen" ><br>
+    
+    &lt;label for="telcen">Teléfono de contacto*&lt;/label><br>
+    &lt;input class="form-control" type="tel"  id="telcen" required><br>
+    
+    &lt;label  for="usercen" >Nombre de Usuario*&lt;/label><br>
+   &lt;input id="usercen" class="form-control" type="text" required><br>
+ 
+    
+    
+    &lt;button type="submit" class="btn btn-primary">Submit&lt;/button><br>
+    
+    &lt;/div>
+    &lt;/form><br>
+           
+       </code>  
+          
+      </div>
+      
+       <div id="contactcen">
+          <h2>Contacto centro </h2>
+           <form>
+          <label  for="nombrecont" >Nombrey apellido * </label>
+   <input id="nombrecont" class="form-control" type="text" required>
+          
+          <label for="emailcont">Email de contacto*</label>
+    <input type="email" class="form-control" id="emailcont"  required>
+          
+         <label for="mensaje">Mensaje</label>
+          <textarea class="form-control" rows="3" id="mensaje" required></textarea>
+          <button type="submit" class="btn btn-primary">Submit</button>
+      
+      </form>
+      
+      
+      
+      <code>
+         
+            &lt;form><br>
+           &lt;label  for="nombrecont" >Nombrey apellido *  &lt;/label><br>
+    &lt;input id="nombrecont" class="form-control" type="text" required><br>
+          
+           &lt;label for="emailcont">Email de contacto* &lt;/label><br>
+     &lt;input type="email" class="form-control" id="emailcont"  required><br>
+          
+          &lt;label for="mensaje">Mensaje &lt;/label><br>
+           &lt;textarea class="form-control" rows="3" id="mensaje" required> &lt;/textarea><br>
+           &lt;button type="submit" class="btn btn-primary">Submit &lt;/button><br>
+          
+      </code>
+      </div>
+      
+      
+      
+      
+      <div id="contactemp">
+          <h2>Contacto alumno - empresas </h2>
+            <form>
+          <label  for="nombrecont" >Nombrey apellido * </label>
+   <input id="nombrecont" class="form-control" type="text" required>
+          
+          <label for="emailcont">Email de contacto*</label>
+    <input type="email" class="form-control" id="emailcont"  required>
+          
+         <label for="mensaje">Mensaje</label>
+          <textarea class="form-control" rows="3" id="mensaje" required></textarea>
+          <button type="submit" class="btn btn-primary">Submit</button>
+      
+      </form>
+      
+      <code>
+          &lt;form><br>
+          &lt;label  for="nombrecont" >Nombrey apellido * &lt;/label><br>
+   &lt;input id="nombrecont" class="form-control" type="text" required><br>
+          
+          &lt;label for="emailcont">Email de contacto*&lt;/label><br>
+    &lt;input type="email" class="form-control" id="emailcont"  required><br>
+          
+         &lt;label for="mensaje">Mensaje&lt;/label><br>
+          &lt;textarea class="form-control" rows="3" id="mensaje" required>&lt;/textarea><br>
+          &lt;button type="submit" class="btn btn-primary">Submit&lt;/button>
+      <br>
+      &lt;/form><br>
+          
+      </code>
+      
+      
+      </div>
+      
+      
+      
+      
+      
+      
+       
+        <div id="contactalumn">
+          <h2>Contacto empresas - alumno </h2>
+            <form>
+          <label  for="nombrecont" >Nombrey apellido * </label>
+   <input id="nombrecont" class="form-control" type="text" required>
+          
+          <label for="emailcont">Email de contacto*</label>
+    <input type="email" class="form-control" id="emailcont"  required>
+          
+         <label for="mensaje">Mensaje</label>
+          <textarea class="form-control" rows="3" id="mensaje" required></textarea>
+          <button type="submit" class="btn btn-primary">Submit</button>
+     
+      </form>
+      
+      
+      <code>
+         
+           &lt;form><br>
+           &lt;label  for="nombrecont" >Nombrey apellido *  &lt;/label><br>
+    &lt;input id="nombrecont" class="form-control" type="text" required><br>
+          
+           &lt;label for="emailcont">Email de contacto* &lt;/label><br>
+     &lt;input type="email" class="form-control" id="emailcont"  required><br>
+          
+          &lt;label for="mensaje">Mensaje &lt;/label><br>
+           &lt;textarea class="form-control" rows="3" id="mensaje" required> &lt;/textarea><br>
+           &lt;button type="submit" class="btn btn-primary">Submit &lt;/button><br>
+     
+       &lt;/form>
+          
+      </code>
+      
+       </div>
+      
+      
+<div class="formelements"> 
+     <h2>Otros elementos </h2>
+     <h3>Boton on/off </h3>
+     
+      <form class="form1" style="padding: 15px">
+			<label class="switch" >
+			  <input type="checkbox">
+			  <div class="slider"></div>
+			</label>
+		</form>
+   <code>
+       
+       &lt;form class="form1" style="padding: 15px"><br>
+			&lt;label class="switch" ><br>
+			  &lt;input type="checkbox"><br>
+			  &lt;div class="slider">&lt;/div><br>
+			&lt;/label><br>
+		&lt;/form><br>
+   </code>
+    
+    <h3>Barra </h3>
+    <div class="wrapper-range">
+<input type="range" class="range">
+</div>
+    
+    <code>
+        
+         &lt;div class="wrapper-range"><br>
+&lt;input type="range" class="range"><br>
+&lt;/div><br>
+        
+    </code>
+    
+    
+    
+     </div>
+      
+      
+			
+       
+   </div>
+    
+</body>
+</html>

@@ -1,0 +1,22 @@
+.anchorlist {
+  background-color: #E45614;
+  padding: 24px 0;
+  border-radius: 24px 24px 24px 24px;
+  -webkit-border-radius: 24px 24px 24px 24px;
+  -moz-border-radius: 24px 24px 24px 24px;
+  -ms-border-radius: 24px 24px 24px 24px;
+  -o-border-radius: 24px 24px 24px 24px;
+  list-style: none;
+}
+
+.anchorlist .anchorlink {
+  color: #fff;
+  padding: 10px 24px;
+  display: block;
+  width: 100%;
+}
+
+.anchorlist .anchorlink:hover {
+  color: #fff;
+  background: #F17A44;
+}

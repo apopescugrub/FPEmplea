@@ -1,0 +1,11 @@
+#casilistos {
+  width: 80%;
+  margin: 0 auto;
+  background: #E45614;
+  padding: 3em;
+  color: white;
+}
+
+#casilistos .casi {
+  text-align: center;
+}

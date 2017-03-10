@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/tabs.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700|Lato:400i|Open+Sans" rel="stylesheet">
+    
+    <link rel="stylesheet" href="csspag/paginas.css" type="text/css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="pageshead">
+   <a href="../frame.html">Volver</a><h1>Tabs, Pills, Accordeon y Collapse</h1>
+   </div>
+    <div class="dot-border">
+       <h2> Scripts </h2>
+       
+        <p>
+               &lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"> &lt;/script>
+               <br>
+   &lt;script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"> &lt;/script>
+             
+         </p>
+        </div>
+    
+    <div class="container">
+  <h2>Tabs dinamicos</h2>
+  <p> Para que los tabs funcionen tenemos que añadir el atributo a todos los enlaces enlaces <code> data-toggle="tab" </code> y la clase  <code>.tab-pane</code> con un id unico a todos los tabs. Todos los tabs tienen que ir dentro de un div con la clase <code>.tab-content</code>
+
+<ul class="nav nav-tabs">
+<li class="active"><a data-toggle="tab" href="#principal">Principal</a></li>
+<li><a data-toggle="tab" href="#tab1">Tab 1</a></li>
+<li><a data-toggle="tab" href="#tab2">Tab 2</a></li>
+<li><a data-toggle="tab" href="#tab3">Tab 3</a></li>
+</ul>
+<div class="tab-content">
+<div id="principal" class="tab-pane fade in active">
+<h3>Pestaña principal</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam mollitia deserunt necessitatibus, nisi porro quibusdam animi, atque aperiam error perferendis ipsum doloremque, est laborum expedita dolores consequuntur temporibus! Voluptates, aspernatur.
+</p>
+</div>
+<div id="tab1" class="tab-pane fade">
+<h3>Tab 1</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim qui aspernatur architecto maiores nihil amet corporis debitis explicabo, ea natus molestiae, consequuntur hic voluptatum distinctio accusamus cum maxime nam, itaque.
+</p>
+</div>
+<div id="tab2" class="tab-pane fade">
+<h3>Tab 2</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio dolore officiis enim pariatur quos architecto, totam officia eligendi libero reiciendis, aut repellendus odio! Perspiciatis porro fuga eligendi, consectetur corrupti sint.
+</p>
+</div>
+<div id="tab3" class="tab-pane fade">
+<h3>Tab 3</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi molestiae laboriosam cum, distinctio reiciendis, omnis reprehenderit repellendus corporis culpa veniam nulla accusantium aspernatur hic in alias saepe quaerat voluptatem ipsa.
+</p>
+</div>
+</div>
+
+    
+    
+    <code>
+        
+          &lt;ul class="nav nav-tabs"><br>
+    &lt;li class="active">&lt;a data-toggle="tab" href="#principal">Principal&lt;/a>&lt;/li><br>
+    &lt;li>&lt;a data-toggle="tab" href="#tab1">Tab 1&lt;/a>&lt;/li><br>
+    &lt;li>&lt;a data-toggle="tab" href="#tab2">Tab 2&lt;/a>&lt;/li><br>
+    &lt;li>&lt;a data-toggle="tab" href="#tab3">Tab 3&lt;/a>&lt;/li><br>
+  &lt;/ul><br>
+
+  &lt;div class="tab-content"><br>
+    &lt;div id="principal" class="tab-pane fade in active"><br>
+     ...<br>
+    &lt;/div><br>
+    &lt;div id="tab1" class="tab-pane fade"><br>
+     ...<br>
+    &lt;/div><br>
+    &lt;div id="tab2" class="tab-pane fade"><br>
+     ...<br>
+    &lt;/div><br>
+    &lt;div id="tab3" class="tab-pane fade"><br>
+     ...<br>
+    &lt;/div><br>
+  &lt;/div><br>
+&lt;/div><br>
+        
+        
+    </code>
+</div>
+    
+        <div class="container">
+  <h2>Pils dinamicos verticales</h2>
+  <p> Para que los pills funcionen tenemos que añadir el atributo a todos los enlaces enlaces <code> data-toggle="pill" </code> y la clase  <code>.tab-pane</code> con un id unico a todos los pills. Todos los tabs tienen que ir dentro de un div con la clase <code>.tab-content</code>
+
+<ul class="nav nav-pills nav-stacked">
+<li class="active"><a data-toggle="pill" href="#pillprincipal">Principal</a></li>
+<li><a data-toggle="pill" href="#pill1">Pill 1</a></li>
+<li><a data-toggle="pill" href="#pill2">Pill 2</a></li>
+<li><a data-toggle="pill" href="#pill3">Pill 3</a></li>
+</ul>
+<div class="tab-content">
+<div id="pillprincipal" class="tab-pane fade in active">
+<h3>Pill principal</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam mollitia deserunt necessitatibus, nisi porro quibusdam animi, atque aperiam error perferendis ipsum doloremque, est laborum expedita dolores consequuntur temporibus! Voluptates, aspernatur.
+</p>
+</div>
+<div id="pill1" class="tab-pane fade">
+<h3>Pill 1</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim qui aspernatur architecto maiores nihil amet corporis debitis explicabo, ea natus molestiae, consequuntur hic voluptatum distinctio accusamus cum maxime nam, itaque.
+</p>
+</div>
+<div id="pill2" class="tab-pane fade">
+<h3>Pill 2</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio dolore officiis enim pariatur quos architecto, totam officia eligendi libero reiciendis, aut repellendus odio! Perspiciatis porro fuga eligendi, consectetur corrupti sint.
+</p>
+</div>
+<div id="pill3" class="tab-pane fade">
+<h3>Pill 3</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi molestiae laboriosam cum, distinctio reiciendis, omnis reprehenderit repellendus corporis culpa veniam nulla accusantium aspernatur hic in alias saepe quaerat voluptatem ipsa.
+</p>
+</div>
+            </div>
+
+    
+     <code>
+        
+          &lt;ul class="nav nav-tabs nav-stacked"><br>
+    &lt;li class="active">&lt;a data-toggle="tab" href="#pillprincipal">Principal&lt;/a>&lt;/li><br>
+    &lt;li>&lt;a data-toggle="tab" href="#pill1">Pill 1&lt;/a>&lt;/li><br>
+    &lt;li>&lt;a data-toggle="tab" href="#pill2">Pill 2&lt;/a>&lt;/li><br>
+    &lt;li>&lt;a data-toggle="tab" href="#pill3">Pill 3&lt;/a>&lt;/li><br>
+  &lt;/ul><br>
+
+  &lt;div class="tab-content"><br>
+    &lt;div id="pillprincipal" class="tab-pane fade in active"><br>
+     ...<br>
+    &lt;/div><br>
+    &lt;div id="pill1" class="tab-pane fade"><br>
+     ...<br>
+    &lt;/div><br>
+    &lt;div id="pill2" class="tab-pane fade"><br>
+     ...<br>
+    &lt;/div><br>
+    &lt;div id="pill3" class="tab-pane fade"><br>
+     ...<br>
+    &lt;/div><br>
+  &lt;/div><br>
+&lt;/div><br>
+        
+        
+    </code>
+        
+      
+    </div>
+    
+     
+   <div class="container">
+   <h2>Collapse</h2>
+   <p> Para collapse el boton tiene que tener los atributos <code>data-toogle="collapse"</code> y <code>data-target="#id"</code> con el id unico del div. El div tiene que tener la clase <code>.collapse</code></p>
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Ver codigo</button>
+       <div id="demo" class="collapse"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, corporis. Accusantium deleniti voluptate tempore optio perferendis dignissimos magnam. Aspernatur, doloribus, asperiores. Accusantium, vel laudantium culpa doloremque dolorem commodi, ab ipsam?   
+  </div><br>
+  <code>
+       &lt;button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Ver codigo&lt;/button><br>
+       &lt;div id="demo" class="collapse"><br> ...<br>
+  &lt;/div>
+      
+  </code>
+  
+  
+   <h2>Acordeon</h2> 
+    
+    <p>Para el acordeon se tiene que añadir a un div el id <code>#accordion</code> y a cada collapse las clases <code>panel</code> y <code> panel-default</code>. 
+    Cada <code>.panel-default</code> tiene 2 partes: <br>
+     <code>.panel-heading</code> con su <code>.panel-title</code> que a su vez es un enlace con un atributo <code>data-parent="#accordion"</code> apuntando al id unico del articulo.<br>
+     y<br>
+        <code>.panel-collapse</code> con un id unico y las clases <code> .panel-collapse</code> y <code> .collapse</code> que a su vez tiene dentro un <code>div</code> con la clase <code>.panel-body</code>.
+    </p>
+     <div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+        Collapsible Group 1</a>
+      </h4>
+    </div>
+    <div id="collapse1" class="panel-collapse collapse in">
+      <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat.</div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+        Collapsible Group 2</a>
+      </h4>
+    </div>
+    <div id="collapse2" class="panel-collapse collapse">
+      <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat.</div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+        Collapsible Group 3</a>
+      </h4>
+    </div>
+    <div id="collapse3" class="panel-collapse collapse">
+      <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat.</div>
+    </div>
+  </div>
+</div>
+ 
+ <code> &lt;div class="panel-group" id="accordion"><br>
+  &lt;div class="panel panel-default"><br>
+    &lt;div class="panel-heading"><br>
+      &lt;h4 class="panel-title"><br>
+        &lt;a data-toggle="collapse" data-parent="#accordion" href="#collapse1"><br>
+        Collapsible Group 1&lt;/a><br>
+      &lt;/h4><br>
+    &lt;/div><br>
+    &lt;div id="collapse1" class="panel-collapse collapse in"><br>
+      &lt;div class="panel-body"><br>...<br>&lt;/div><br>
+    &lt;/div><br>
+  &lt;/div><br>
+  &lt;div class="panel panel-default"><br>
+    &lt;div class="panel-heading"><br>
+      &lt;h4 class="panel-title"><br>
+        &lt;a data-toggle="collapse" data-parent="#accordion" href="#collapse2"><br>
+        Collapsible Group 2&lt;/a><br>
+      &lt;/h4><br>
+    &lt;/div><br>
+    &lt;div id="collapse2" class="panel-collapse collapse"><br>
+      &lt;div class="panel-body"><br>...<br>&lt;/div><br>
+    &lt;/div><br>
+  &lt;/div><br>
+  &lt;div class="panel panel-default"><br>
+    &lt;div class="panel-heading"><br>
+      &lt;h4 class="panel-title"><br>
+        &lt;a data-toggle="collapse" data-parent="#accordion" href="#collapse3"><br>
+        Collapsible Group 3&lt;/a><br>
+      &lt;/h4><br>
+    &lt;/div><br>
+    &lt;div id="collapse3" class="panel-collapse collapse"><br>
+      &lt;div class="panel-body"><br>...<br>&lt;/div><br>
+    &lt;/div><br>
+  &lt;/div><br>
+&lt;/div><br></code>
+  
+</div>
+   
+   
+   
+   
+   
+   
+
+
+</body>
+</html>

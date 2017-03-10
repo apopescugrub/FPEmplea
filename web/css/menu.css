@@ -1,0 +1,64 @@
+#menu .navbar {
+  background: rgba(255, 255, 255, 0.9);
+  margin-bottom: 0px !important;
+  position: relative !important;
+}
+
+#menu .navbar > .col-lg-12 {
+  margin-bottom: 10px;
+}
+
+#menu .navbar .navbar-nav li a:hover {
+  background: #e7e7e7;
+  border-bottom: 3px solid #E45614;
+}
+
+#menu .navbar .navbar-nav li a:focus {
+  background: #e7e7e7;
+  border-bottom: 3px solid #E45614;
+}
+
+#menu .navbar .navbar-nav .active a {
+  background: none;
+}
+
+#menu .navbar .title-logo,
+#menu .navbar .desc-logo {
+  margin: 0px;
+  padding: 2px;
+}
+
+#menu .navbar .container #navbar {
+  margin: 0 auto;
+  width: 43%;
+}
+
+#menu .navbar .container #navbar .register {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+#menu .navbar .container #navbar ul li.active {
+  border-bottom: 3px solid transparent;
+}
+
+#menu .navbar .container #navbar ul li.active:hover {
+  border-bottom: none;
+}
+
+#menu .navbar .container #navbar ul li.active:focus {
+  border-bottom: none;
+}
+
+@media screen and (min-width: 500px) and (max-width: 768px) {
+  #menu .navbar .container #navbar {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #menu .navbar .container #navbar {
+    width: 100%;
+  }
+}

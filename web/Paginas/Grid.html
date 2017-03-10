@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+      
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/Estilos.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700|Lato:400i|Open+Sans" rel="stylesheet">
+    
+    <link rel="stylesheet" href="csspag/paginas.css" type="text/css">
+</head>
+<body>
+    <div class="pageshead">
+    <a href="../frame.html">Volver</a><h1>Grid de columnas</h1>
+    </div>
+    
+    <section>
+  <h3>Número de columnas</h2> 
+<p>Se usa un grid de 12 columnas</p>
+<h3>Puntos de ruptura</h3>
+
+<p>Al ser un framework mobile first se parte de la resolución de 320px de ancho mínimo con los siguientes puntos de ruptura:</p>
+<code>
+Clase .xs - Teléfonos de pantalla pequeña (Resolución menor de 768px)<br>
+Clase .sm - Dispositivos pequeños y tablets(Resolución mayor o igual de 768px)<br>
+Clase .md - Escritorios de tamaño medio como portátiles y netbooks (Resolución mayor de 992px)<br>
+Clase .lg - Escritorios ultra grandes (Resolución mayor de 1200px)<br>
+
+</code>
+<h3>Uso</h3>
+
+<p>Ocultar y mostrar elementos dependiendo de la resolución</p>
+<code>
+Ocultar: .hidden-xs .hidden-sm .hidden-md .hidden-lg<br>
+    Mostrar: .visible-xs .visible-sm .visible-md .visible-lg</code>
+<h3>Creación de columnas con grid</h3>
+
+<code>&lt;div class="row"&gt;<br>
+&lt;div class="col-md-6"&gt;<br>&lt;/div&gt;<br>&lt;/div&gt;
+</code>
+<p>Donde md es el salto asignado y 6 es número de columnas que ocupa dentro del grid de 12 columnas.</p>
+
+<h3>Ejemplos de distribución de columnas dependiendo de la resolución</h3>
+
+
+<h4>Distribución de los elementos dependiendo de la resolución:</h4>
+<div class="row">
+
+<div class="box col-xs-12 col-sm-6 col-md-4 col-lg-4">Columna 1 </div>
+<div class="box col-xs-12 col-sm-6 col-md-4 col-lg-4">Columna 2 </div>
+<div class="box col-xs-12 col-sm-2 col-md-4 col-lg-4">Columna 3 </div>
+</div>
+<p>Claseado de las columnas: col-xs-12 col-sm-2 col-md-4 col-lg-4</p>
+
+<h4>Otro ejemplo:</h4>
+<div class="row">
+<div class="box col-xs-6 col-sm-6 col-md-4 col-lg-4">Columna 1 </div>
+<div class="box col-xs-6 col-sm-6 col-md-4 col-lg-4">Columna 2 </div>
+    <div class="box col-xs-6 col-sm-6 col-md-4 col-lg-4">Columna 3 </div>
+<div class="box col-xs-6 col-sm-6 col-md-3 col-lg-1">Columna 4 </div>
+    <div class="box col-xs-6 col-sm-12 col-md-3 col-lg-2">Columna 5 </div>
+<div class="box col-xs-6 col-sm-12 col-md-3 col-lg-4">Columna 6 </div>
+    <div class="box col-xs-12 col-sm-12 col-md-3 col-lg-5">Columna 7 </div>
+</div>
+   <p>Claseado mixto </p>
+
+</section>
+</body>
+</html>
+
+
