@@ -1,2 +1,2 @@
 # FPEmplea
-Bolsa de trabajo para estudiantes de F.P.
+Bolsa de empleo para estudiantes de F.P.
